@@ -76,7 +76,7 @@ public class NoteDetailsActivity extends AppCompatActivity {
                     note.done = false;
                     note.timestamp = System.currentTimeMillis();
                     if (getIntent().hasExtra(EXTRA_NOTE)) {
-                        App.getInstance().getNoteDao().update(note); 
+                        App.getInstance().getNoteDao().update(note);
                     } else {
                         App.getInstance().getNoteDao().insert(note);
                     }
