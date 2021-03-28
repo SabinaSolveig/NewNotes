@@ -133,7 +133,8 @@ public class Adapter extends RecyclerView.Adapter<Adapter.NoteViewHolder> {
             silentUpdate = false;
         }
 
-        private void updateStrokeOut() { //выполненные заметки зачеркиваем
+        //выполненные заметки зачеркиваем
+        private void updateStrokeOut() {
             if (note.done) {
                 noteText.setPaintFlags(noteText.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
             } else {
